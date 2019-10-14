@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <CheckBox
+        android:id="@+id/MainActivityCheckBoxAccept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Accepted" />
+
+    <TextView
+        android:id="@+id/MainActivityTextViewAcceptResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/MainActivityButtonOK"
+        android:onClick="onButtonClicked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK" />
+
+    <Switch
+        android:id="@+id/MainActivitySwitchSupported"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Supported" />
+
+    <TextView
+        android:id="@+id/MainActivityTextViewSwitchResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
