@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Education Statement" />
+
+        <RadioGroup
+            android:id="@+id/MainActivityRadioGrupEducation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RadioButton
+                android:id="@+id/MainActivityradioButtonPostGraduate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Post Graduate"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/MainActivityradioGraduate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Graduate"
+                android:tag="G"/>
+
+            <RadioButton
+                android:id="@+id/MainActivityradioButtonUnderGraduate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UnderGraduate"
+                android:tag="UG"/>
+
+            <RadioButton
+                android:id="@+id/MainActivityradioButtonHighSchool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="High School"
+                android:tag="HS"/>
+
+            <RadioButton
+                android:id="@+id/MainActivityradioButtonOther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:tag="O"/>
+
+            <EditText
+                android:id="@+id/MainActivityEditTextEnterYourEducation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter the Your Education Statement"
+                android:visibility="gone"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/MainActivityRadioGroupMaritalStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/MainActivityTextViewMaritalStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Marital Satatus" />
+
+        <RadioButton
+            android:id="@+id/MainActivityradioButtonMarried"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Married"
+            android:checked="true"
+            android:tag="M"/>
+
+        <RadioButton
+            android:id="@+id/MainActivityradioButtonSingle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Single"
+            android:tag="S"/>
+
+        <RadioButton
+            android:id="@+id/MainActivityradioButtonDivorced"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Divorced"
+            android:tag="D"/>
+
+        </RadioGroup>
+    <Button
+        android:onClick="onOKButtonClicked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK" />
+
+    <TextView
+        android:id="@+id/MainActivityTextViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESULT"/>
+</LinearLayout>
